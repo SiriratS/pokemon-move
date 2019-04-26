@@ -1,43 +1,26 @@
 export default [
     {
-        color: 'blue',
-        moveToY: 170
+        name: 'pikachu',
+        img: 'https://media.giphy.com/media/HU51xqIWYIumk/giphy.gif',
+        position: {
+            x: 50,
+            y: 50
+        }
     },
     {
-        color: 'blue',
-        moveToY: 110
+        name: 'bulbasaur',
+        img: 'https://media.giphy.com/media/HH2bb3Pjq5IB2/giphy.gif',
+        position: {
+            x: 100,
+            y: 100
+        }
     },
     {
-        color: 'blue',
-        moveToY: 50
-    },
-    {
-        color: 'purple',
-        moveToY: 130
-    },
-    {
-        color: 'purple',
-        changeHeight: 220,
-        moveToY: 180
-    },
-    {
-        color: 'purple',
-        changeHeight: 250,
-        moveToY: 130
-    },
-    {
-        color: 'red',
-        changeHeight: 270,
-        moveToY: 50
-    },
-    {
-        color: 'red',
-        changeHeight: 270,
-        moveToY: 130
-    },
-    {
-        color: 'red',
-        changeHeight: 320,
-        moveToY: 30,
-    }                         
+        name: 'magika',
+        img: 'https://media.giphy.com/media/27wc7vMWPvvJC/giphy.gif',
+        position: {
+            x: 150,
+            y: 150
+        }
+    }                            
 ];

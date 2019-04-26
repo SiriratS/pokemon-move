@@ -1,21 +1,19 @@
 import '../styles/index.scss';
 import mockData from './data/data';
-import moveBar from './move-bar/move-bar';
+import Pokemon from './pokemon/pokemon';
+import 'jquery';
+import 'popper.js';
+import 'bootstrap';
 
-const config = {
-    width: 1024,
-    height: 500,
-    bar: {
-        width: 70,
-        height: 180,
-        gap: 30
-    }
-};
-
-const chart = new moveBar(
-    "#example-1", 
-    mockData,
-    config
+export const pokemon = new Pokemon(
+    "#playground", 
+    mockData
 );
 
-chart.draw();
+pokemon.init();
+
+window.moveLeft = (pokemonName) => { pokemon.moveLeft(pokemonName); };
+window.moveRight = (pokemonName) => { pokemon.moveRight(pokemonName); };
+window.moveUp = (pokemonName) => { pokemon.moveUp(pokemonName); };
+window.moveDown = (pokemonName) => { pokemon.moveDown(pokemonName); };
+

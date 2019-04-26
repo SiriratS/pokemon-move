@@ -1,13 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>D3 Animation</title>
 </head>
+
 <body>
-  <div class="animation-container">
-      <div id="example-1"></div>
+  <div class="main container-fluid">
+    <div class="row">
+      <div class="col-12 main-header">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-between">
+            <li class="breadcrumb-item">BridgeAsia Playground</li>
+            <button type="button" class="btn btn-primary">Help</button>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-9 main-body">
+        <div id="playground">
+
+        </div>
+      </div>
+      <div class="col-3 main-menu">
+        <div id="accordion" class="main-control">
+          <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#collapse-pikachu">
+              <span>Pikachu</span>
+            </div>
+
+            <div id="collapse-pikachu" class="collapse show" data-parent="#accordion">
+              <div class="card-body move-control">
+                <p>Move</p>
+                <div class="move-control-panel">
+                  <div class="move-control-x">
+                    <p>x:</p>
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-move" onClick="moveLeft('pikachu')">
+                        <span class="oi oi-caret-left"></span>
+                      </button>
+                      <button type="button" class="btn btn-move" onClick="moveRight('pikachu')">
+                        <span class="oi oi-caret-right"></span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="move-control-y">
+                    <p>y:</p>
+                    <div class="btn-group-vertical" role="group">
+                      <button type="button" class="btn btn-move" onClick="moveUp('pikachu')">
+                        <span class="oi oi-caret-top"></span>
+                      </button>
+                      <button type="button" class="btn btn-move" onClick="moveDown('pikachu')">
+                        <span class="oi oi-caret-bottom"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#collapse-bulbasaur">
+              <span>Bulbasaur</span>
+            </div>
+
+            <div id="collapse-bulbasaur" class="collapse" data-parent="#accordion">
+              <div class="card-body move-control">
+                <p>Move</p>
+                <div class="move-control-panel">
+                  <div class="move-control-x">
+                    <p>x:</p>
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-move" onClick="moveLeft('bulbasaur')">
+                        <span class="oi oi-caret-left"></span>
+                      </button>
+                      <button type="button" class="btn btn-move" onClick="moveRight('bulbasaur')">
+                        <span class="oi oi-caret-right"></span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="move-control-y">
+                    <p>y:</p>
+                    <div class="btn-group-vertical" role="group">
+                      <button type="button" class="btn btn-move" onClick="moveUp('bulbasaur')">
+                        <span class="oi oi-caret-top"></span>
+                      </button>
+                      <button type="button" class="btn btn-move" onClick="moveDown('bulbasaur')">
+                        <span class="oi oi-caret-bottom"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-header" data-toggle="collapse" data-target="#collapse-magika">
+                <span>Magika</span>
+              </div>
+  
+              <div id="collapse-magika" class="collapse" data-parent="#accordion">
+                <div class="card-body move-control">
+                  <p>Move</p>
+                  <div class="move-control-panel">
+                    <div class="move-control-x">
+                      <p>x:</p>
+                      <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-move" onClick="moveLeft('magika')">
+                          <span class="oi oi-caret-left"></span>
+                        </button>
+                        <button type="button" class="btn btn-move" onClick="moveRight('magika')">
+                          <span class="oi oi-caret-right"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="move-control-y">
+                      <p>y:</p>
+                      <div class="btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-move" onClick="moveUp('magika')">
+                          <span class="oi oi-caret-top"></span>
+                        </button>
+                        <button type="button" class="btn btn-move" onClick="moveDown('magika')">
+                          <span class="oi oi-caret-bottom"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>          
+        </div>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
